@@ -137,7 +137,7 @@ impl From<Rect> for [f32; 4] {
 }
 
 /// A RGBA color in the sRGB color space represented as `f32`'s in the range `[0.0-1.0]`
-#[derive(Copy, Clone, PartialEq, Debug)]
+#[derive(Copy, Clone, Serialize, Deserialize, PartialEq, Debug)]
 pub struct Color {
     /// Red component
     pub r: f32,
